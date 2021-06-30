@@ -1,0 +1,174 @@
+@media screen and (min-width:1024px) {
+
+    header {
+        .toggle {
+            display: none;
+
+        }
+        .nav {
+            display: block;
+            background-color: transparent;
+            width: 50%;
+            margin: 0;
+            height: auto;
+            padding: 0;
+            text-align: right;
+            &::after{
+                display: none;
+            }
+            .menu-nav{
+                display: flex;
+                justify-content: flex-end;
+                &__item {
+                    .menu-nav__link{
+                            color: $White;
+                        &.contact {
+                            background-color: $White;
+                            &:hover{
+                                background-color: transparent;
+                                border: 1px solid $White;
+                                // border-radius: 20px;
+                                color: $White;
+    
+                            }
+                        }
+                    }
+                   
+                }
+                
+            }
+        }
+    }
+
+
+    //main 
+    .main {
+        .inner {
+            height: 65vh;
+            background-color: $White;
+        }
+        // hero
+
+        .hero {
+            background: url(../images/desktop/image-header.jpg);
+            background-size: cover;
+            background-position: center;
+            div {
+                margin-top: 10%;
+                img {
+                    width: 5%;
+                }
+            }
+        }
+
+        //brand 
+
+        .brand {
+            display: flex;
+            flex-direction: row-reverse;
+            .egg {
+                width: 50%;
+                background: url(../images/desktop/image-transform.jpg);
+                background-size: contain;
+                background-position: center;
+                // background-repeat: repeat-y;
+            }
+        
+        }
+
+        // audience 
+        .audience {
+            display: flex;
+            .lamp{
+                width: 50%;
+            }
+        }
+
+        // text section for both previous sections
+        .text {
+            width: 50%;
+            text-align: left;
+            h3, p {
+                width: 100%;
+            }
+            .lol {
+                width: 60%;
+                margin: auto;
+                text-align: left;
+            }
+            
+
+        }
+
+
+        // /fruits 
+
+        .fruits {
+            display: flex;
+            .cherry, .orange {
+                background: url(../images/desktop/image-graphic-design.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 50%;
+                
+                p {
+                    width: 50%;
+                }
+            }
+            .orange {
+                background: url(../images/desktop/image-photography.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        // Testimoniales
+
+        .testimoniales{
+                height: 70vh;
+                .title {
+                    font-size: 1.2rem;
+                }
+                .item_container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90%;
+                    margin: auto;
+                    .item {
+                        width: 33%;
+                    }
+                }
+        }
+
+        // pic grid
+
+        .photo-grid {
+            .pic {
+                width: 25%;
+            }
+        }
+
+
+        
+    }
+
+    // footer
+    footer{
+        min-height: none;
+        height: 20vh;
+        .logo {
+            img {
+                width:15%
+            }
+        }
+
+        .footer-nav {
+            .menu-nav_footer {
+                width: 20%;
+            }
+        }
+        .social-icons {
+            width: 10%;
+        }
+    }
+}

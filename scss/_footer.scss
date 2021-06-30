@@ -1,0 +1,50 @@
+//footer
+footer {
+    min-height: 40vh;
+    background: url(../images/mobile/image-graphic-design.jpg);
+    background-position: bottom;
+    background-size: 200%;
+    padding: 3rem 2rem 2rem 2rem;
+    text-align: center;
+    
+    .logo{
+        margin-bottom: 2rem;
+        img {
+            width: 45%;
+            fill: red;
+        }
+    }
+    .footer-nav {
+        .menu-nav_footer {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 5rem;
+            width: 90%;
+
+            li {
+                a{
+                    font-size: 1rem;
+                    color: $DarkModerateCyan;
+                    &:hover {
+                        color: $White;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: $DarkModerateCyan;
+            font-size: 1rem;
+            &:hover {
+                color: $White;
+            }
+        }
+    }
+}

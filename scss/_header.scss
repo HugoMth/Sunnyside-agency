@@ -1,0 +1,63 @@
+header{
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    width: 100%;
+    .logo {
+        width: 40%;
+    }
+    .toggle {
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: $White;
+        border: none;
+    }
+    .nav {
+        display: none;
+        width: 90%;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 1.8rem 0.5rem;
+        height: 60%;
+        background-color: $White;
+        text-align: center;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 0px;
+            height: 0;
+            border: 20px solid transparent;
+            border-bottom-color: $White;
+            border-top: 0;
+            border-right: 0;
+            margin-left: -10px;
+            margin-top: -15px;
+        }
+        .menu-nav {
+            &__item {
+                padding: 1rem;
+                .menu-nav__link {
+                    &.contact {
+                        background-color: $Yellow;
+                        border-radius: 20px;
+                        padding: 0.5rem 1rem;
+                        color: $VeryDarkDesaturatedBlue;
+                        text-transform: uppercase;
+                        font-family: 'Fraunces';
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        &.open {
+            display: block;
+        }
+    }
+
+}
